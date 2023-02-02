@@ -1,0 +1,33 @@
+.loadmore {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  &-complete {
+    flex: 1;
+    position: relative;
+    font-size: 24px;
+    color: #999;
+    line-height: 1;
+    text-align: center;
+    // &::before{
+    //   content: "";
+    //   position: absolute;
+    //   height: 1px;
+    //   width: 34%;
+    //   left: 20px;
+    //   top: 50%;
+    //   background: #cccccc;
+    // }
+    // &::after{
+    //   content: "";
+    //   position: absolute;
+    //   height: 1px;
+    //   width: 34%;
+    //   right: 20px;
+    //   top: 50%;
+    //   background: #cccccc;
+    // }
+  }
+}

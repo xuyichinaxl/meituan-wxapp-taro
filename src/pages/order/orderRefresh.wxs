@@ -1,0 +1,7 @@
+module.exports = {
+  refresherPulling: function(event, ownerInstance){
+    ownerInstance.selectComponent('.refresh').setStyle({
+      top: (event.detail.dy - 100) + 'px'
+    })
+  }
+}

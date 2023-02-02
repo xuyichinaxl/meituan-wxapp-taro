@@ -1,0 +1,22 @@
+.login {
+  &-btn {
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(left, #f9de59, #f4bd51);
+    z-index: 99;
+    color: #333;
+    line-height: 88px;
+    text-align: center;
+    border-radius: 10px;
+    border: 0;
+    &::after {
+      border: 0;
+    }
+  }
+}
+.at-loading__ring {
+  border-color: #333 transparent transparent transparent !important;
+}

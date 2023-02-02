@@ -1,0 +1,76 @@
+.form{
+  padding: 0 20px;
+  font-size: 24px;
+  color: #333;
+}
+.signout{
+  height: 80px;
+  font-size: 24px;
+  padding: 0 20px;
+  line-height: 80px;
+  text-align: right;
+  color: #f6c863; 
+  Text{
+    padding: 10px 0 10px 10px;
+  }
+}
+.form-field{
+  height: 90px;
+  display: flex;
+  align-items: center;
+  .label{
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    View{
+      display: none;
+    }
+    &.required{
+      View{
+        color: #ea4025;
+        margin: 0 4px 0 0;
+        display: block;
+      }
+    }
+  }
+  .entry{
+    flex: 1;
+    height: 90px;
+    border-bottom: 1px solid #f9f9f9;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10px;
+    Input{
+      flex: 1;
+      height: 100%;
+      line-height: 90px;
+    }
+  }
+}
+.submit-btn{
+  height: 72px;
+  background: linear-gradient(left, #f9de59, #f4bd51);
+  font-size: 28px;
+  line-height: 72px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  margin: 35px 0 0;
+  border: 0;
+  &::after{
+    border: 0;
+    background: transparent;
+    width: 0;
+    height: 0;
+  }
+}
+.modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, .6);
+  z-index: 1000;
+}

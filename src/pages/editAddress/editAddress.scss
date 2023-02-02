@@ -1,0 +1,139 @@
+.edit-wrap {
+  padding: 0 20px;
+  font-size: 24px;
+  color: #333;
+  .field {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .label {
+      width: 100px;
+    }
+    .address-res {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-lt {
+        &-main {
+          line-height: 1;
+        }
+        &-sub {
+          line-height: 1;
+          font-size: 22px;
+          color: #999;
+          margin: 16px 0 0;
+        }
+      }
+      &-reset {
+        line-height: 1;
+        padding: 16px 18px;
+        border: 1px solid #f7d273;
+        border-radius: 8px;
+        color: #f7d273;
+        font-size: 22px;
+      }
+    }
+    .entry {
+      flex: 1;
+      height: 90px;
+      border-bottom: 1px solid #f9f9f9;
+      display: flex;
+      align-items: center;
+      padding: 0 0 0 10px;
+      input {
+        flex: 1;
+        height: 100%;
+        line-height: 90px;
+      }
+      .input-pd {
+        padding-right: 32px;
+      }
+      .tag {
+        display: inline-block;
+        width: 84px;
+        height: 42px;
+        border: 1px solid #dedede;
+        border-radius: 8px;
+        text-align: center;
+        line-height: 42px;
+        margin: 0 26px 0 0;
+        font-size: 20px;
+        &.sel {
+          background: #fdf8e9;
+          border: 1px solid #fdf8e9;
+        }
+      }
+      .sex {
+        flex: 0 0 210px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-item {
+          display: flex;
+          .checkbox {
+            width: 18px;
+            height: 18px;
+            padding: 6px;
+            border-radius: 50%;
+            border: 1px solid #e1e1e1;
+            margin: 0 18px 0 0;
+            View {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+          }
+          .sel {
+            border: 1px solid #f7d273;
+            View {
+              background: #f7d273;
+            }
+          }
+        }
+      }
+    }
+    .search {
+      position: absolute;
+      top: 90px;
+      left: 90px;
+      right: 0;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      z-index: 70;
+      border-radius: 16px;
+      &-item {
+        line-height: 90px;
+        border-bottom: 1px solid #f9f9f9;
+        padding: 0 0 0 10px;
+      }
+    }
+  }
+  .confirm {
+    height: 72px;
+    background: linear-gradient(left, #f9de59, #f4bd51);
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 35px 0 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.submiting {
+      background: white;
+      border: 1px solid #333;
+      opacity: 0.3;
+    }
+    View {
+      padding: 0 0 0 16px;
+    }
+    .at-icon {
+      font-size: 36px;
+      color: #333;
+      transform-origin: center center;
+      animation: loading2 2.5s infinite linear;
+      line-height: 1;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.form{
+  padding: 0 20px;
+  font-size: 24px;
+  color: #333;
+  .field{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .label{
+      width: 140px;
+    }
+    
+    .entry{
+      flex: 1;
+      height: 90px;
+      border-bottom: 1px solid #f9f9f9;
+      display: flex;
+      align-items: center;
+      padding: 0 0 0 10px;
+      Input{
+        flex: 1;
+        height: 100%;
+        line-height: 90px;
+      }
+      .code{
+        width: 160px;
+        height: 44px;
+        color: #333;
+        background: linear-gradient(left, #f7cd67, #f5c455);
+        line-height: 44px;
+        text-align: center;
+        border-radius: 22px;
+        &.wait{
+          background: rgb(247, 247, 247);
+          color: rgb(175, 175, 175);
+        }
+      }
+      .eye{
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .search{
+      position: absolute;
+      top: 90px;
+      left: 90px;
+      right: 0;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+      z-index: 70;
+      border-radius: 16px;
+      &-item{
+        line-height: 90px;
+        border-bottom: 1px solid #f9f9f9;
+        padding: 0 0 0 10px;
+      }
+    }
+  }
+  .confirm{
+    height: 72px;
+    background: linear-gradient(left, #f9de59, #f4bd51);
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 35px 0 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.submiting{
+      background: white;
+      border: 1px solid #333;
+      opacity: 0.3;
+    }
+    View{
+      padding: 0 0 0 16px;
+    }
+    .at-icon{
+      font-size: 36px;
+      color: #333;
+      transform-origin: center center;
+      animation: loading2 2.5s infinite linear;
+      line-height: 1;
+    }
+  }
+}
+.success{
+  padding: 20px;
+  font-size: 24px;
+  color: #333;
+  Text{
+    display: inline-block;
+    font-size: 22rpx;
+    color: #333;
+    margin: 20px 0 0;
+    padding: 12rpx 28rpx;
+    border-radius: 8rpx;
+    background: linear-gradient(left, #f9de67, #f6c963);
+  }
+}

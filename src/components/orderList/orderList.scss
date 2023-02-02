@@ -1,0 +1,78 @@
+@import '~taro-ui/dist/style/components/icon.scss';
+.order-item {
+  background: white;
+  border-radius: 20px;
+  margin: 0 20px 20px;
+  padding: 0 20px 15px;
+  &:first-child {
+    margin: 20px;
+  }
+}
+.order-tit {
+  height: 78px;
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-name {
+    font-size: 24px;
+    color: #333;
+  }
+  &-status {
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+    background: #74b566;
+    border-radius: 4px;
+    padding: 8px 14px;
+    &.waitget {
+      background: #f19c38;
+    }
+  }
+}
+.order-use {
+  display: flex;
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  &-name {
+    font-size: 24px;
+    color: #333;
+  }
+  &-time {
+    color: #999;
+    font-size: 20px;
+  }
+}
+.order-scroll {
+  height: 90px;
+  white-space: nowrap;
+  .swiper-img {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+    margin-right: 8px;
+  }
+}
+.order-goods {
+  height: 60px;
+  border-bottom: 1px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 12px;
+}
+.order-delivery {
+  font-size: 24px;
+  color: #333;
+  vertical-align: middle;
+  line-height: 40px;
+}
+.order-time {
+  display: inline-block;
+  align-items: center;
+  font-size: 24px;
+}

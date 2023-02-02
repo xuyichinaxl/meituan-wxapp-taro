@@ -1,0 +1,19 @@
+@import '~taro-ui/dist/style/index.scss';
+
+page {
+  font-family: Helvetica Neue, Arial, PingFang SC, Microsoft YaHei, sans-serif;
+}
+
+image {
+  width: 0;
+  height: 0;
+}
+
+@keyframes loading2 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

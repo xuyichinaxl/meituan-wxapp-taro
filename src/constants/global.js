@@ -1,0 +1,5 @@
+export const STATUSBARHEIGHT = 'STATUSBARHEIGHT'
+export const SYSTEMINFO = 'SYSTEMINFO'
+export const ADDRESSLIST = 'ADDRESSLIST'
+export const USERINFO = 'USERINFO'
+export const CARTS = 'CARTS'

@@ -1,0 +1,195 @@
+@import '~taro-ui/dist/style/components/icon.scss';
+.store {
+  background: white;
+  &-info {
+    padding: 20px 30px 8px;
+    .all {
+      margin-bottom: 10rpx;
+      position: relative;
+      display: flex;
+      align-items: center;
+      .at-icon-trash {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 42rpx;
+        height: 42rpx;
+        font-size: 24rpx;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #333;
+        background: #f8c74e;
+        border: 1rpx solid #f8c74e;
+      }
+      .img {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        margin: 0 20px 0 0;
+        .image {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+        .view {
+          position: absolute;
+          right: 0;
+          top: 0;
+          background: #fdc84f;
+          color: #666;
+          font-size: 16px;
+          padding: 2px 4px;
+          border-radius: 6px;
+        }
+      }
+      .name {
+        flex: 1;
+        min-width: 0;
+        padding: 0 40px 0 0;
+        &-word {
+          font-size: 28px;
+          line-height: 32rpx;
+          margin: 0 0 10px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        &-score {
+          display: flex;
+          align-items: center;
+          line-height: 1;
+          font-size: 20px;
+          .at-icon {
+            color: #fdc84f;
+          }
+          .score {
+            margin: 0 16px 0 6px;
+            color: #fd7100;
+          }
+          .distance {
+            color: #999;
+          }
+        }
+      }
+      .tostore {
+        width: 116px;
+        height: 42px;
+        border: 2px solid #fd7100;
+        color: #fd7100;
+        font-size: 20px;
+        text-align: center;
+        line-height: 42px;
+        border-radius: 42px;
+      }
+    }
+    .coupon {
+      display: flex;
+      align-items: flex-start;
+      .label {
+        font-size: 22px;
+        line-height: 60px;
+        color: #999;
+        margin: 0 22px 0 0;
+      }
+      &-item {
+        flex: 1;
+        padding: 12px 60px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        .dis {
+          position: relative;
+          margin: 0 6px 12px 0;
+          color: #f62523;
+          border: 1px solid white;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          .view {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            display: block;
+            border: 1px solid #fcccca;
+            font-size: 18px;
+            padding: 2px 14px;
+            border-radius: 4px;
+            background: #fff1f0;
+          }
+          &::before {
+            z-index: 10;
+            position: absolute;
+            top: 50%;
+            left: -5px;
+            content: '';
+            height: 10px;
+            width: 10px;
+            border: 1px solid #fcccca;
+            transform: translateY(-50%);
+            background: white;
+            border-radius: 50%;
+          }
+          &::after {
+            z-index: 10;
+            position: absolute;
+            top: 50%;
+            right: -5px;
+            content: '';
+            height: 10px;
+            width: 10px;
+            border: 1px solid #fcccca;
+            transform: translateY(-50%);
+            background: white;
+            border-radius: 50%;
+          }
+        }
+        .minus {
+          margin: 0 6px 12px 0;
+          color: #f62523;
+          border: 1px solid #fcccca;
+          font-size: 18px;
+          padding: 4px 10px;
+          border-radius: 6px;
+        }
+      }
+      &-get {
+        line-height: 60px;
+        font-size: 22px;
+        color: #333;
+        .at-icon {
+          color: #999;
+          font-size: 28px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .delivery {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    color: #333;
+    &-lt {
+      display: flex;
+      align-items: center;
+      &-item {
+        display: flex;
+        align-items: center;
+        margin: 0 20px 0 0;
+        .image {
+          width: 22px;
+          height: 22px;
+          margin: 0 8px 0 0;
+        }
+      }
+    }
+    .at-icon {
+      color: #999;
+      font-size: 28px;
+    }
+  }
+}

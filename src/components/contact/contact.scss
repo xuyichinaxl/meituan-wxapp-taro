@@ -1,0 +1,73 @@
+.contact {
+  position: fixed;
+  z-index: 1002;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+  &-body {
+    position: absolute;
+    left: 105px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 540px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    padding: 20px 0 0;
+    font-size: 24px;
+    color: #333;
+    box-sizing: border-box;
+    .phone {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 20px 20px;
+      &-num {
+        padding: 0 0 0 10px;
+      }
+      .text {
+        display: inline-block;
+        font-size: 22rpx;
+        color: #333;
+        padding: 12rpx 28rpx;
+        border-radius: 8rpx;
+        background: linear-gradient(left, #f9de67, #f6c963);
+        margin: 10px auto;
+      }
+    }
+    .photo-wrap {
+      text-align: center;
+      margin: 0 20px 30px;
+      display: flex;
+      .photo-flex {
+        flex: 1;
+      }
+    }
+    .photo {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto 20px;
+      .image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .tip {
+      margin: 0 0 20px;
+    }
+    .operate {
+      border-top: 1px solid #f5f5f5;
+      display: flex;
+      .ok {
+        flex: 1;
+        height: 88px;
+        text-align: center;
+        line-height: 88px;
+        font-size: 28px;
+      }
+    }
+  }
+}

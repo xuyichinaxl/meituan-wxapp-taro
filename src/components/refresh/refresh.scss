@@ -1,0 +1,16 @@
+.refresh {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f3b53c;
+  .status {
+    font-size: 24px;
+    padding: 0 0 0 20px;
+  }
+}

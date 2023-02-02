@@ -1,0 +1,20 @@
+page{
+  background: #efefef;
+}
+.line{
+  height: 20px;
+}
+.block-title{
+  height: 42px;
+  background: #efefef;
+  padding: 0 0 0 28px;
+  line-height: 42px;
+  font-size: 22px;
+  color: #333;
+  &.fix{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 120;
+  }
+}

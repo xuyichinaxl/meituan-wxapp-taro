@@ -1,0 +1,261 @@
+@import '~taro-ui/dist/style/components/icon.scss';
+.spec-box {
+  position: fixed;
+  z-index: 1002;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+.spec-bg {
+  position: absolute;
+  left: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 678px;
+}
+.spec-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 0 0 0;
+  .at-icon {
+    width: 72px;
+    height: 72px;
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.6);
+  }
+}
+.spec-modal {
+  background: white;
+  border-radius: 12px;
+  &-sel {
+    box-sizing: border-box;
+    padding: 28px 0 0;
+    height: auto;
+    max-height: 800px;
+    &-wrap {
+      margin: 0 30px;
+    }
+    .name {
+      font-size: 30px;
+      font-weight: bold;
+      color: #333;
+      line-height: 1;
+      margin: 0 0 36px;
+    }
+    .sel-item {
+      margin: 0 0 38px;
+      &-label {
+        font-size: 22px;
+        color: #333;
+        line-height: 1;
+        margin: 0 0 8px;
+        font-weight: bold;
+        .tip-bx {
+          padding: 0 0 0 6px;
+        }
+        .tip {
+          color: #f1a63b;
+          font-weight: normal;
+        }
+      }
+      &-desc {
+        font-size: 20px;
+        color: #999;
+        margin: 0 0 16px;
+        line-height: 1;
+      }
+      &-text {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .qty-item {
+          height: 80px;
+          flex: 0 0 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &-name {
+            color: #333;
+            flex: 0 0 194px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 22px;
+            &-price {
+              color: #999;
+              padding: 0 0 0 5px;
+            }
+          }
+          &-operate {
+            display: flex;
+            flex: 0 0 130px;
+            justify-content: flex-end;
+            &-l {
+              display: flex;
+            }
+          }
+          .cut {
+            width: 42px;
+            height: 42px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            border: 2px solid #d8d9dc;
+            color: #b0b0b0;
+            font-weight: bold;
+          }
+          .num {
+            width: 42px;
+            text-align: center;
+            font-size: 24px;
+            line-height: 42px;
+            color: #333;
+          }
+          .plus {
+            width: 42px;
+            height: 42px;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #333;
+            background: #f8c74e;
+            border: 1px solid #f8c74e;
+          }
+        }
+        .text {
+          flex: 0 0 194px;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          color: #333;
+          border: 2px solid #e0e0e0;
+          font-size: 22px;
+          border-radius: 6px;
+          margin: 0 12px 18px 0;
+          &:nth-of-type(3n) {
+            margin: 0 0 18px;
+          }
+          &.active {
+            color: #f1a63b;
+            border: 2px solid #f8d697;
+            background: #fefbf2;
+          }
+          &-price {
+            color: #999;
+            padding: 0 0 0 5px;
+          }
+        }
+      }
+    }
+  }
+  .status {
+    position: relative;
+    z-index: 10;
+    &-sel {
+      padding: 0 30px;
+      line-height: 62px;
+      border-top: 1px solid #f3f3f3;
+      border-bottom: 1px solid #f3f3f3;
+      font-size: 22px;
+      color: #999;
+      background: #fafafa;
+      .text {
+        color: #333;
+        &::after {
+          content: '、';
+        }
+        .qty {
+          color: #f1a63b;
+        }
+      }
+      .text {
+        &:last-child {
+          &::after {
+            content: '';
+          }
+        }
+      }
+    }
+    &-add {
+      padding: 0 12px 0 30px;
+      height: 112px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .currency {
+        color: #e65243;
+        font-size: 32px;
+        font-weight: bold;
+        .text {
+          font-size: 20px;
+        }
+      }
+      .btn {
+        height: 54px;
+        width: 210px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f7ce69;
+        color: #333;
+        font-size: 24px;
+        border-radius: 26px;
+        .at-icon {
+          margin: 0 12px 0 0;
+        }
+      }
+    }
+  }
+}
+.addcart {
+  display: flex;
+  align-items: center;
+  .cut {
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #d8d9dc;
+    color: #b0b0b0;
+    font-weight: bold;
+  }
+  .num {
+    width: 42px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 42px;
+    color: #333;
+  }
+  .plus {
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #333;
+    background: #f8c74e;
+    border: 1px solid #f8c74e;
+    line-height: 42px;
+  }
+}
